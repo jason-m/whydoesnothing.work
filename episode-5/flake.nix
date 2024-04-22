@@ -1,4 +1,3 @@
-  GNU nano 7.2                                                   flake.nix                                                             
 {
   description = "Base system for raspberry pi 4";
   inputs = {
