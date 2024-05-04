@@ -1,4 +1,4 @@
-{ stdenv, fetchurl }:
+{ stdenv, lib, fetchurl, runTimePackage }:
 
 stdenv.mkDerivation rec {
   pname = "an-app-i-guess";
@@ -16,7 +16,9 @@ stdenv.mkDerivation rec {
     cp ${pname} $out/bin/
   '';
 
-  meta = with stdenv.lib; {
+  propagatedBuildInputs = [ runTimePackage ]
+
+  meta = with lib; {
     description = "A thing that does stuff, because we like stuff";
     homepage = "http://example.com";
     license = licenses.mit;
