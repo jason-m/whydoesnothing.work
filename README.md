@@ -5,3 +5,4 @@ References from my youtube videos https://youtube.com/@WhyDoesNothingWork
 
  - Episode 5: Installing NixOS on raspberry pi 
  - Episode 6: NixOS Packages
+ - Episode 7: NixOS Modules
