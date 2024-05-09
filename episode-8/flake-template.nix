@@ -1,4 +1,5 @@
 {
+  description = "Flakes basic Template";
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
   };
