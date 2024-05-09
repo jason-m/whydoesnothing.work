@@ -9,10 +9,7 @@
       system = "x86_64-linux";
       modules = [
         ({ pkgs, ... }: {
-          nixpkgs = {
-            overlays = [(self: super: { unstable = import nixpkgs-unstable { system = "x86_64-linux"; }; })
-            ];
-          };
+          nixpkgs = { overlays = [(self: super: { unstable = import nixpkgs-unstable { system = "x86_64-linux"; }; }) ]; };
         })
         ./configuration.nix
       ];
