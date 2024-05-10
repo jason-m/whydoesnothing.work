@@ -1,10 +1,10 @@
 { config, lib, pkgs, ... }:
 
 let
-  ssssssssssssssssssssssssssssssssssssscfg = config.services.app-name;   
+  cfg = config.services.app-name;   
   # cfg = config.programs.app-name;
 
-  configFile = pkgs.writeText "app-name.consssssssssssssf" ''
+  configFile = pkgs.writeText "app-name.conf" ''
     aSetting=${cfg.optionText}
     anotherSetting=${toString cfg.optionNumber}
   '';
