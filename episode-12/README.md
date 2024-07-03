@@ -8,5 +8,6 @@ nix-env --switch-generation <number> -p /nix/var/nix/profiles/system
 
 ## Set current config to default boot
 use this when you boot a previous generation via the boot manager menu and want it to be set to default on next boot
+
 `/run/current-system/bin/switch-to-configuration { switch or boot }`
 
