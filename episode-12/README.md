@@ -1,4 +1,4 @@
-Switching Generations without reboot 
+## Switching Generations without reboot 
 ```
 nix-env --list-generations -p /nix/var/nix/profiles/system
 nix-env --switch-generation <number> -p /nix/var/nix/profiles/system
