@@ -14,5 +14,15 @@
     randomizedDelaySec = "45min";
   };
 
+  nix.gc = {
+    automatic = true;
+    dates = "00:01";
+    options = "--delete-older-than 10d";
+  };
+  nix.optimise = {
+    automatic = true;
+    dates = [ "05:00" ]; 
+  };
+
 
 }
