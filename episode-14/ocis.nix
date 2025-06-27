@@ -18,7 +18,7 @@ services.ocis = {
       
       # Admin user (password comes from environmentFile)
       OCIS_ADMIN_USER_ID = "admin";
-      
+      OCIS_ADMIN_USER_UUID = "00000000-0000-0000-0000-000000000001";  # replace this with a proper uuid by using uuidgen
       # Trust proxy headers
       OCIS_PROXY_ENABLE_BASIC_AUTH = "false";
     };
