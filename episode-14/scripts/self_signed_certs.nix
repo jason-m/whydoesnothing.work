@@ -8,7 +8,7 @@ chmod 644 /etc/nginx/ssl
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
   -keyout /etc/nginx/ssl/nginx-selfsigned.key \
   -out /etc/nginx/ssl/nginx-selfsigned.crt \
-  -subj "/C=CA/ST=Ontario/L=Ottawa/O=HomeServer/CN=localhost"
+  -subj "/C=CA/ST=Alberta/L=Edmonton/O=HomeServer/CN=localhost"
 
 echo "Generated SSL certificate files:"
 echo "- nginx-selfsigned.crt"
